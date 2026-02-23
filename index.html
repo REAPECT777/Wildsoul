@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WILD SOUL GEORGIA | SEASON PREVIEW</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root { --gold: #c5a059; --bg: #0b0d0e; --card: #151719; --gray: #888; }
+        * { box-sizing: border-box; }
+        body { background: var(--bg); color: white; font-family: 'Montserrat', sans-serif; margin: 0; overflow-x: hidden; scroll-behavior: smooth; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; text-transform: uppercase; }
+
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 25px 5%; position: absolute; width: 100%; z-index: 100; background: linear-gradient(to bottom, rgba(0,0,0,0.8), transparent); }
+        .logo { font-weight: 600; letter-spacing: 4px; color: white; text-decoration: none; font-size: 1.2rem; }
+        .logo span { color: var(--gold); }
+        .btn-auth-top { color: white; text-decoration: none; font-size: 0.8rem; border: 1px solid var(--gold); padding: 8px 15px; border-radius: 4px; }
+
+        #main-hero { height: 100vh; background: linear-gradient(rgba(0,0,0,0.4), var(--bg)), url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=2070'); background-size: cover; background-position: center; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
+        #main-hero h1 { font-size: clamp(3.5rem, 10vw, 6rem); margin: 0; line-height: 0.85; letter-spacing: -2px; }
+
+        .section { padding: 80px 10%; max-width: 1400px; margin: 0 auto; }
+        .label { color: var(--gold); text-transform: uppercase; letter-spacing: 5px; font-size: 0.75rem; display: block; margin-bottom: 15px; font-weight: 600; }
+        
+        .tour-grid { display: grid; grid-template-columns: 1fr; gap: 70px; }
+        .tour-item { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 50px; align-items: center; border-bottom: 1px solid #222; padding-bottom: 50px; }
+        .tour-img { width: 100%; height: 400px; object-fit: cover; border-radius: 4px; }
+        .btn-detail { display: inline-block; padding: 12px 25px; border: 1px solid var(--gold); color: var(--gold); text-decoration: none; text-transform: uppercase; letter-spacing: 2px; font-size: 0.75rem; cursor: pointer; background: transparent; transition: 0.3s; }
+        .btn-detail:hover { background: var(--gold); color: black; }
+
+        #footer-action { background: var(--card); }
+        .action-container { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; }
+        .form-box input, .form-box textarea { width: 100%; padding: 15px; margin-bottom: 15px; background: #0b0d0e; border: 1px solid #333; color: white; }
+        .btn-submit { width: 100%; background: var(--gold); color: black; border: none; padding: 15px; font-weight: bold; cursor: pointer; text-transform: uppercase; }
+
+        #details-page { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #000; z-index: 1000; overflow-y: auto; }
+        .details-header { height: 50vh; background-size: cover; background-position: center; position: relative; display: flex; align-items: center; justify-content: center; }
+        .details-header::before { content: ''; position: absolute; width: 100%; height: 100%; background: rgba(0,0,0,0.5); }
+        .details-header h1 { position: relative; font-size: clamp(2rem, 6vw, 3.5rem); z-index: 2; text-align: center; }
+
+        .details-content { max-width: 850px; margin: -60px auto 100px; background: #0b0d0e; padding: 40px; position: relative; z-index: 3; border-top: 2px solid var(--gold); }
+        .back-btn { background: none; border: none; color: var(--gold); cursor: pointer; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 30px; }
+        .main-text { font-size: 1.05rem; line-height: 1.7; color: #ccc; white-space: pre-line; }
+
+        .essentials-box { background: #151719; padding: 25px; border-left: 3px solid var(--gold); margin: 30px 0; }
+        .essentials-list { list-style: none; padding: 0; margin: 0; }
+        .essentials-list li { margin-bottom: 10px; display: flex; align-items: flex-start; color: #eee; }
+        .essentials-list li::before { content: "✓"; color: var(--gold); margin-right: 15px; font-weight: bold; }
+
+        @media (max-width: 1024px) { .tour-item, .action-container { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#" class="logo">WILD<span>SOUL</span> GEORGIA</a>
+        <a href="#footer-action" class="btn-auth-top">რეგისტრაცია</a>
+    </nav>
+
+    <div id="main-content">
+        <section id="main-hero">
+            <p style="letter-spacing: 8px; color: var(--gold);">THE ULTIMATE ADVENTURE</p>
+            <h1>WILD<br>SOUL</h1>
+        </section>
+
+        <section class="section">
+            <span class="label">SEASON PREVIEW</span>
+            <h2>დაგეგმე შენი შემდეგი ტრიუმფი</h2>
+            
+            <div class="tour-grid">
+                <div class="tour-item">
+                    <img src="https://images.unsplash.com/photo-1544198365-f5d60b6d8190?q=80&w=2070" class="tour-img">
+                    <div class="tour-text">
+                        <span class="label">MYSTERY</span>
+                        <h3>ხვამლის მისტიკა</h3>
+                        <p>ლეგენდების მთა, სადაც ისტორია და მითოლოგია ერთიანდება.</p>
+                        <button class="btn-detail" onclick="showDetails('khvamli')">დეტალურად ➤</button>
+                    </div>
+                </div>
+
+                <div class="tour-item">
+                    <img src="https://images.unsplash.com/photo-1589308078059-be1415eab4c3?q=80&w=2070" class="tour-img">
+                    <div class="tour-text">
+                        <span class="label">CULTURE</span>
+                        <h3>სვანეთის გული</h3>
+                        <p>მედიდური უშბა და სვანური კოშკების საიდუმლო.</p>
+                        <button class="btn-detail" onclick="showDetails('svaneti')">დეტალურად ➤</button>
+                    </div>
+                </div>
+
+                <div class="tour-item">
+                    <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=2070" class="tour-img">
+                    <div class="tour-text">
+                        <span class="label">ALPS</span>
+                        <h3>ყაზბეგის ჯადოსნობა</h3>
+                        <p>ჯუთა და ჭაუხების მწვერვალები — საქართველოს დოლომიტები.</p>
+                        <button class="btn-detail" onclick="showDetails('juta')">დეტალურად ➤</button>
+                    </div>
+                </div>
+
+                <div class="tour-item">
+                    <img src="https://images.unsplash.com/photo-1549880338-65ddcdfd017b?q=80&w=2070" class="tour-img">
+                    <div class="tour-text">
+                        <span class="label">EXTREME</span>
+                        <h3>მყინვარწვერი (5047 მ)</h3>
+                        <p>გამოცდა, რომელიც მხოლოდ რჩეულებისთვისაა.</p>
+                        <button class="btn-detail" onclick="showDetails('kazbek')">დეტალურად ➤</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="footer-action" class="section">
+            <div class="action-container">
+                <div class="contact-info">
+                    <span class="label">კონტაქტი</span>
+                    <h3>მოგვწერე თავგადასავლისთვის</h3>
+                    <p>📞 598 38 07 83</p>
+                    <p>📍 თბილისი, საქართველო</p>
+                </div>
+                <div class="form-box">
+                    <span class="label">რეგისტრაცია</span>
+                    <input type="text" placeholder="თქვენი სახელი">
+                    <input type="email" placeholder="ელ-ფოსტა">
+                    <textarea rows="4" placeholder="რომელი ტური გაინტერესებთ?"></textarea>
+                    <button class="btn-submit">გაგზავნა</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="details-page">
+        <div id="details-header" class="details-header">
+            <h1 id="details-title"></h1>
+        </div>
+        <div class="details-content">
+            <button class="back-btn" onclick="hideDetails()">← უკან დაბრუნება</button>
+            <div id="details-body" class="main-text"></div>
+            <div class="essentials-box">
+                <h3 style="color:var(--gold); margin-top:0; font-size: 1.1rem;">ექსპედიციის დეტალები</h3>
+                <ul id="details-list" class="essentials-list"></ul>
+            </div>
+            <div style="text-align:center; margin-top:30px;">
+                <a href="tel:598380783" class="btn-detail" style="background:var(--gold); color:black; font-weight:bold;">დაჯავშნა: 598 38 07 83</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const tourData = {
+            khvamli: {
+                title: "ხვამლის მისტიკა",
+                img: "https://images.unsplash.com/photo-1544198365-f5d60b6d8190?q=80&w=2070",
+                desc: "ლეგენდების მთა გეძახის! 🏔️✨\n„WILD SOUL GEORGIA“ გეპატიჟებათ დაუვიწყარ თავგადასავალში ხვამლის მთაზე - ადგილას, სადაც ისტორია, მითოლოგია და კავკასიონის დიდებული ხედები ერთიანდება.\n\n📍 რას გთავაზობთ?\n✅ ტრანსპორტირება კომფორტული მიკროავტობუსით\n✅ სერტიფიცირებული და გამოცდილი გიდების მომსახურება\n✅ ფოტო-ვიდეო გადაღება თქვენი მოგონებებისთვის\n✅ დაუვიწყარი საღამო კოცონთან და ახალი მეგობრები\n\nდაიძინე იმ იმედით, რომ მალე ცასთან უფრო ახლოს იქნები... 🌌",
+                essentials: ["სირთულე: საშუალო", "საჭიროა: სალაშქრო ფეხსაცმელი", "წყალგაუმტარი თბილი ქურთუკი"]
+            },
+            svaneti: {
+                title: "სვანეთის გული",
+                img: "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?q=80&w=2070",
+                desc: "🏰 სვანეთის გული — ლაღამი და უშბის მედიდური მზერა! 🏔️👑\nარსებობს ადგილები, რომლებიც არავის ტოვებს გულგრილს. „Wild Soul“ გეპატიჟებათ სვანეთისკენ — კერძოდ, ისტორიულ ლაღამში, რათა ახლოდან იხილოთ კავკასიონის დიდებული „დედოფალი“ — უშბა.\n\n📍 მოსანახულებელი ადგილები:\n• ისტორიული ლაღამი — უძველესი და ავთენტური უბანი.\n• უშბის ხედები — საუკეთესო სათვალთვალო წერტილები.\n• სვანური კოშკების სიამაყე — ლეგენდები და ამბები.\n\n💰 ტურის ღირებულება: 180 ლარი",
+                essentials: ["მგზავრობა (თბილისი-მესტია-თბილისი)", "გიდის მომსახურება", "ფოტო-ვიდეო გადაღება", "ღამისთევა საოჯახო სასტუმროში", "შეკრება: 05:00 სთ | სპორტის სასახლე"]
+            },
+            juta: {
+                title: "ყაზბეგის ჯადოსნობა",
+                img: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=2070",
+                desc: "✨ ყაზბეგის ალპური ჯადოსნობა – ჯუთა და ჭაუხები ✨🏔️\nსაქართველოს „დოლომიტები“ გეძახიან! ჭაუხების მასივი თავისი მკაცრი კლდოვანი მწვერვალებითა და მათ ძირში გაშლილი ზურმუხტისფერი მდელოებით ნამდვილ ალპურ ზღაპარს ჰგავს.\n\n📅 თარიღი: 11 თებერვალი\n🚶 ტურის სახეობა: განტვირთვა / მარტივი\n\n📍 რას ვნახავთ?\n• ჯადოსნური ჯუთა — ცივილიზაცია და ბუნება ჰარმონიაში.\n• ჭაუხების მასივი — საფეხმავლო მარშრუტი.\n• ალპური ტბები — კრისტალურად სუფთა წყალი.\n\n💰 ტურის ღირებულება: 50 ლარი",
+                essentials: ["მგზავრობა მიკროავტობუსით", "პროფესიონალი გიდი", "მზისგან დამცავი საშუალებები", "შეკრება: 06:00 სთ | სპორტის სასახლე"]
+            },
+            kazbek: {
+                title: "მყინვარწვერი (5047 მ)",
+                img: "https://images.unsplash.com/photo-1549880338-65ddcdfd017b?q=80&w=2070",
+                desc: "🏔️⚖️ მყინვარწვერი — გამოცდა რჩეულებისთვის! (5047 მ) ⚖️🏔️\nეს არ არის უბრალოდ გასეირნება, ეს არის ბრძოლა ჰაერის უკმარისობასთან, ყინვასთან და საკუთარ დაღლილობასთან. იქ, სადაც სხეული ნებდება, სული აგრძელებს გზას! ✨\n\n📍 რას გთავაზობთ?\n• ეტაპობრივი აკლიმატიზაცია.\n• მეტეოსადგური (ბეთლემის ქოხი) — ღამისთევა 3650 მეტრზე.\n• მყინვარის გადაკვეთა და წვრთნა.\n• მწვერვალის დაპყრობა — 5047 მეტრი!\n\n💰 ღირებულება: ინდივიდუალურია (კონსულტაციისთვის მოგვწერეთ).",
+                essentials: ["აბსოლუტური მორჩილება ინსტრუქტორს", "ალკოჰოლი კატეგორიულად აკრძალულია", "საჭიროა ფიზიკური და ფსიქოლოგიური სიმტკიცე", "მყინვარი ჩვენი სახლია — არ ვანაგვიანებთ!"]
+            }
+        };
+
+        function showDetails(key) {
+            const data = tourData[key];
+            document.getElementById('details-title').innerText = data.title;
+            document.getElementById('details-header').style.backgroundImage = `url('${data.img}')`;
+            document.getElementById('details-body').innerText = data.desc;
+            document.getElementById('details-list').innerHTML = data.essentials.map(i => `<li>${i}</li>`).join('');
+            document.getElementById('details-page').style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function hideDetails() {
+            document.getElementById('details-page').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+    </script>
+</body>
+</html>
